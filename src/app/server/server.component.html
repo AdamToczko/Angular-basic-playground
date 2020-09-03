@@ -1,0 +1,12 @@
+<!-- Attribute directive for dynamic styling
+square brackets indicate property binding
+-->
+<p
+  [ngStyle]="{ color: getColor() }"
+  [ngClass]="{ online: serverStatus === 'online' }"
+>
+  this server is <b>{{ getServerStatus() }}</b>
+</p>
+
+<app-success-alert></app-success-alert>
+<app-warning-alert></app-warning-alert>
